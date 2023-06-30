@@ -35,33 +35,34 @@ export const info: Info = {
   name: 'Len Lester',
   title: 'Software Engineer',
   location: 'Glendale, CA',
-  description: "I'm a passionate software developer with a focus on building web applications.",
+  description: "I'm a software developer that loves building web applications and tools.",
   github: 'https://github.com/slowshi',
   linkedin: 'https://www.linkedin.com/in/len-lester/',
   email: 'lenster921@gmail.com',
-  resume: '/lenlester_resume.pdf',
+  resume: '/resume/lenlester_resume.pdf',
 }
 
 export const experience: ExperienceItem[] = [
   {
     title: 'Senior Software Engineer',
     employer: 'Age of Learning',
-    description: 'Upgraded the internal tools front-end framework from AngularJS to Lit Web Components.',
+    description:
+      'Upgraded the tools front-end framework from AngularJS in-house framework AoflJS. Used Neptune graph database for an adaptive learning engine.',
     stack: ['JavaScript', 'PHP', 'MySql', 'AWS', 'Docker', 'Jenkins'],
     image: '/age_of_learning.jpeg',
     imageAlt: 'Age of Learning',
     date: '2018 - 2022',
-    link: 'https://ageofLearning.com/',
+    link: 'https://ageoflearning.com/',
   },
   {
     title: 'Software Engineer III',
     employer: 'Age of Learning',
-    description: 'Developed tools framework in AngularJS.',
+    description: 'Developed an tools framework in AngularJS.',
     stack: ['JavaScript', 'PHP', 'MySql', 'AWS', 'Docker', 'Jenkins'],
     image: '/age_of_learning.jpeg',
     imageAlt: 'Age of Learning',
     date: '2015 - 2018',
-    link: 'https://ageofLearning.com/',
+    link: 'https://ageoflearning.com/',
   },
   {
     title: 'Software Engineer II',
@@ -72,7 +73,7 @@ export const experience: ExperienceItem[] = [
     image: '/age_of_learning.jpeg',
     imageAlt: 'Age of Learning',
     date: '2013 - 2015',
-    link: 'https://ageofLearning.com/',
+    link: 'https://ageoflearning.com/',
   },
   {
     title: 'Flash Developer',
@@ -82,7 +83,7 @@ export const experience: ExperienceItem[] = [
     image: '/age_of_learning.jpeg',
     imageAlt: 'Age of Learning',
     date: '2010 - 2013',
-    link: 'https://ageofLearning.com/',
+    link: 'https://abcmouse.com/',
   },
 ]
 
@@ -100,7 +101,7 @@ export const projects: ProjectItem[] = [
   },
   {
     title: 'QR Code Wallpaper',
-    description: 'A simple app generates a QR code that can be downloaded and used as your lockscreen',
+    description: 'An app to generate a QR code that can be downloaded and used as your lockscreen.',
     date: '2023',
     stack: ['NextJS', 'Tailwind', 'HTML', 'CSS', 'TypeScript'],
     image: '/qr-codes.png',
@@ -133,7 +134,7 @@ export const projects: ProjectItem[] = [
   {
     title: 'Adventure Academy',
     description: "Adventure Academy's landing page was built using AoflJS.",
-    date: '2018',
+    date: '2019',
     stack: ['HTML', 'CSS', 'JavaScript', 'Lit'],
     image: '/aa_icon.png',
     imageAlt: 'AoflJS',

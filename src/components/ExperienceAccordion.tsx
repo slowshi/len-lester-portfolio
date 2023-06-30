@@ -45,11 +45,13 @@ export default function ExperienceAccordion() {
                   </a>
                 </div>
               </div>
-              <div
-                className="bg-cover rounded-md hidden md:inline-block"
-                style={{ backgroundImage: `url(${project.image})`, width: '100px', height: '100px' }}
-                title={project.imageAlt}
-              ></div>
+              <div className="hidden md:inline-block">
+                <div
+                  className="bg-cover rounded-md"
+                  style={{ backgroundImage: `url(${project.image})`, width: '100px', height: '100px' }}
+                  title={project.imageAlt}
+                ></div>
+              </div>
             </div>
           </AccordionBody>
         </AccordionItem>

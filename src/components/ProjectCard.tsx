@@ -15,7 +15,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       ></div>
       <div className="rounded-md lg:rounded-l-none lg:border-l-0 p-6 flex flex-col justify-between leading-normal">
         <div className="mb-8">
-          <div className="monokai-white font-bold text-xl mb-8">{project.title}</div>
+          <div className="monokai-white font-bold text-xl mb-8">
+            {project.title} <span className="text-sm font-normal monokai-gray">{project.date}</span>
+          </div>
           <p className="monokai-yellow text-base">{project.description}</p>
         </div>
         <div className="mb-4">
