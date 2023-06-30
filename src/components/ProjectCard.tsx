@@ -11,11 +11,11 @@ type Project = {
   github: string
 }
 
-type ExperienceCardProps = {
+type ProjectCardProps = {
   project: Project
 }
 
-export default function ExperienceCard({ project }: ExperienceCardProps) {
+export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="w-full max-w-full lg:flex shadow-lg rounded-md mb-6 monokai-bg-black-2">
       <div
@@ -23,7 +23,7 @@ export default function ExperienceCard({ project }: ExperienceCardProps) {
         style={{ backgroundImage: `url(${project.image})` }}
         title={project.imageAlt}
       ></div>
-      <div className="rounded-md lg:rounded-l-none lg:border-l-0 p-8 flex flex-col justify-between leading-normal">
+      <div className="rounded-md lg:rounded-l-none lg:border-l-0 p-6 flex flex-col justify-between leading-normal">
         <div className="mb-8">
           <div className="monokai-white font-bold text-xl mb-8">{project.title}</div>
           <p className="monokai-yellow text-base">{project.description}</p>
@@ -45,20 +45,24 @@ export default function ExperienceCard({ project }: ExperienceCardProps) {
             target="_blank"
           >
             <div className="flex items-center justify-center">
-              <span className="mr-1">Visit Site</span>
-              <FiExternalLink></FiExternalLink>
+              <span className="mr-1">Site</span>
+              <FiExternalLink />
             </div>
           </a>
-          <a
-            className="inline-block transition duration-300 ease-in-out monokai-blue hover:monokai-white hover:monokai-bg-blue py-2 px-4 rounded"
-            href={project.github}
-            target="_blank"
-          >
-            <div className="flex items-center justify-center">
-              <FiGithub className="mr-1"></FiGithub>
-              <span className="mr-1">GitHub</span>
-            </div>
-          </a>
+          {project.github !== '' ? (
+            <a
+              className="inline-block transition duration-300 ease-in-out monokai-blue hover:monokai-white hover:monokai-bg-blue py-2 px-4 rounded"
+              href={project.github}
+              target="_blank"
+            >
+              <div className="flex items-center justify-center">
+                <FiGithub className="mr-1" />
+                <span className="mr-1">GitHub</span>
+              </div>
+            </a>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     </div>

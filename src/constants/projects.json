@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Doopmarketeer",
+    "description": "A tool that allows Doodles NFT holders the ability to view the history of interactions within the ecosystem.",
+    "stack": ["NextJS", "ChakraUI", "Redux", "EthersJS", "HTML", "CSS", "TypeScript", "NodeJS"],
+    "image": "/doopmarketeer.png",
+    "imageAlt": "Doopmarketeer",
+    "date": "2023",
+    "link": "https://doopmarketeer.app/",
+    "github": "https://github.com/slowshi/doopmarketeer-next"
+  },
+  {
+    "title": "QR Code Wallpaper",
+    "description": "A simple app generates a QR code that can be downloaded and used as your lockscreen",
+    "date": "2023",
+    "stack": ["NextJS", "Tailwind", "HTML", "CSS", "TypeScript"],
+    "image": "/qr-codes.png",
+    "imageAlt": "QR Code Wallpaper",
+    "link": "https://qr-code-wallpapers.vercel.app/",
+    "github": "https://github.com/slowshi/qr-code-wallpapers"
+  },
+  {
+    "title": "Fohmo",
+    "description": "Built with ReactJS and Ethers, fohmo allowed users to monitor their balances of OlympusDAO and various OHM forks that launched in 2021",
+    "date": "2021",
+    "stack": ["ReactJS", "Redux", "EthersJS", "Bootstrap", "HTML", "CSS", "JavaScript"],
+    "image": "/fohmo.png",
+    "imageAlt": "Fohmo",
+    "link": "https://fohmo.io/",
+    "github": "https://github.com/slowshi/fohmo-frontend"
+  },
+  {
+    "title": "AofL JS",
+    "description": "Contributing member in an open sourced JavaScript Framework built server the needs of Age of Learning.",
+    "date": "2018",
+    "stack": ["HTML", "CSS", "JavaScript", "Lit", "Web Components"],
+    "image": "/aofljs.png",
+    "imageAlt": "AoflJS",
+    "link": "https://ageoflearning.github.io/aofl/#/",
+    "github": "https://github.com/AgeOfLearning/aofl"
+  },
+  {
+    "title": "Adventure Academy",
+    "description": "Adventure Academy's landing page was built using AoflJS.",
+    "date": "2018",
+    "stack": ["HTML", "CSS", "JavaScript", "Lit"],
+    "image": "/aa_icon.png",
+    "imageAlt": "AoflJS",
+    "link": "https://ageoflearning.github.io/aofl/#/",
+    "github": ""
+  }
+]
