@@ -57,7 +57,8 @@ export const experience: ExperienceItem[] = [
   {
     title: 'Software Engineer III',
     employer: 'Age of Learning',
-    description: 'Developed an tools framework in AngularJS.',
+    description:
+      'Developed a tools framework in AngularJS. Helped launch the Adventure Academy Product. Built a tool that helped activities and lessons become more curriculum driven.',
     stack: ['JavaScript', 'PHP', 'MySql', 'AWS', 'Docker', 'Jenkins'],
     image: '/age_of_learning.jpeg',
     imageAlt: 'Age of Learning',
@@ -68,7 +69,7 @@ export const experience: ExperienceItem[] = [
     title: 'Software Engineer II',
     employer: 'Age of Learning',
     description:
-      'Worked with team to rewrite ABCMouse to HTML/Javascript. Developed a tool that converted Flash animations to HTML/JavaScript.',
+      'Worked with team to rewrite ABCMouse to HTML5 and JavaScript. Developed a tool that converted Flash animations to JavaScript Canvas.',
     stack: ['JavaScript', 'PHP', 'MySql', 'Flash', 'ActionScript'],
     image: '/age_of_learning.jpeg',
     imageAlt: 'Age of Learning',
