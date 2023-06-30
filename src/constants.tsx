@@ -17,7 +17,7 @@ export interface ProjectItem {
   imageAlt: string
   date: string
   link: string
-  github?: string
+  github: string
 }
 
 export interface Info {
