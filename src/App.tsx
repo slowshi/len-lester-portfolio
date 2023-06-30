@@ -1,11 +1,10 @@
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
 import './App.css'
 import ProjectCard from './components/ProjectCard'
-import projects from './constants/projects.json'
 import { Link as ReactScrollLink } from 'react-scroll'
 import ExperienceAccordion from './components/ExperienceAccordion'
 import { Link } from './components/Link'
-import links from './constants/links.json'
+import { info, projects } from './constants'
 function App() {
   return (
     <div className="mx-auto container max-w-screen-lg px-10 pt-5 monokai-white">
@@ -33,7 +32,7 @@ function App() {
             Projects
           </ReactScrollLink>
           <a
-            href="/lenlester_resume.pdf"
+            href={info.resume}
             target="_blank"
             rel="noopener noreferrer"
             className="transition duration-300 ease-in-out monokai-red hover:monokai-bg-red hover:monokai-white rounded me-2 py-1 px-2 md:py-2 md:px-4"
@@ -44,23 +43,21 @@ function App() {
       </div>
 
       {/* About */}
-      <h1 className="text-center text-7xl sm:text-9xl font-bold mb-2 name-header">Len Lester</h1>
-      <h3 className="text-center text-2xl mb-2 monokai-yellow">Software Engineer</h3>
-      <p className="text-center mb-2 monokai-white">Glendale, CA</p>
+      <h1 className="text-center text-7xl sm:text-9xl font-bold mb-2 name-header">{info.name}</h1>
+      <h3 className="text-center text-2xl mb-2 monokai-yellow">{info.title}</h3>
+      <p className="text-center mb-2 monokai-white">{info.location}</p>
       <div className="text-center mb-20">
-        <Link href={`${links.github}`} target="_blank">
+        <Link href={`${info.github}`} target="_blank">
           <FiGithub></FiGithub>
         </Link>
-        <Link href={`${links.linkedin}`} target="_blank">
+        <Link href={`${info.linkedin}`} target="_blank">
           <FiLinkedin></FiLinkedin>
         </Link>
-        <Link href={`mailto:${links.email}`}>
+        <Link href={`mailto:${info.email}`}>
           <FiMail></FiMail>
         </Link>
       </div>
-      <p className="mb-40 text-center text-xl monokai-white">
-        I'm a passionate software developer with a focus on building web applications.
-      </p>
+      <p className="mb-40 text-center text-xl monokai-white">{info.description}</p>
 
       {/* Experience */}
       <h1 className="monokai-green text-4xl text-center text-bold mb-10" id="experience">
@@ -85,13 +82,13 @@ function App() {
         Contact
       </h1>
       <div className="mb-40 text-center">
-        <Link href={`${links.github}`} target="_blank">
+        <Link href={`${info.github}`} target="_blank">
           <FiGithub className="text-2xl"></FiGithub>
         </Link>
-        <Link href={`${links.linkedin}`} target="_blank">
+        <Link href={`${info.linkedin}`} target="_blank">
           <FiLinkedin className="text-2xl"></FiLinkedin>
         </Link>
-        <Link href={`mailto:${links.email}`}>
+        <Link href={`mailto:${info.email}`}>
           <FiMail className="text-2xl"></FiMail>
         </Link>
       </div>

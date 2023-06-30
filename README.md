@@ -2,7 +2,7 @@
 
 This is my portfolio website. I wanted to keep it simple and list the things that I've done in the past with links to my resume and other socials.
 
-I chose Monokai as the theme for the site. With any new experience, I'll add to my projects JSON. That's pretty much it.
+I chose Monokai as the theme for the site. It's being deployed on vercel. All information can be updated in the constants file.
 
 ### Stack
 
@@ -12,6 +12,6 @@ I chose Monokai as the theme for the site. With any new experience, I'll add to 
 
 ### Todo
 
-- Work Experience?
 - Picture of me?
 - Update my resume?
+- Open source it in the future?

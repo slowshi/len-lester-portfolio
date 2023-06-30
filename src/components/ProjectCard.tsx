@@ -1,18 +1,8 @@
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
-
-type Project = {
-  title: string
-  description: string
-  stack: string[]
-  image: string
-  date: string
-  imageAlt: string
-  link: string
-  github: string
-}
+import { ProjectItem } from '../constants'
 
 type ProjectCardProps = {
-  project: Project
+  project: ProjectItem
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {

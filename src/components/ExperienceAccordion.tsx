@@ -1,4 +1,4 @@
-import experience from '../constants/experience.json'
+import { experience } from '../constants'
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from './Accordion'
 import { FiExternalLink } from 'react-icons/fi'
 
