@@ -38,7 +38,7 @@ function App() {
       <h3 className="text-center text-2xl mb-2 monokai-yellow">Software Engineer</h3>
       <p className="text-center mb-20 monokai-white">Glendale, CA</p>
       <p className="mb-40 text-center text-xl monokai-white">
-        I'm a passionate software developer with a focus on building web tools.
+        I'm a passionate software developer with a focus on building web applications.
       </p>
 
       <h1 className="monokai-orange text-4xl text-center text-bold mb-10" id="projects">
