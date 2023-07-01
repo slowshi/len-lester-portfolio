@@ -47,7 +47,7 @@ export default function ExperienceAccordion() {
               </div>
               <div className="hidden md:inline-block">
                 <div
-                  className="bg-cover rounded-md"
+                  className="bg-contain bg-no-repeat bg-center rounded-md"
                   style={{ backgroundImage: `url(${project.image})`, width: '100px', height: '100px' }}
                   title={project.imageAlt}
                 ></div>
