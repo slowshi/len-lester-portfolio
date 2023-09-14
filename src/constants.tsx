@@ -122,7 +122,7 @@ export const projects: ProjectItem[] = [
   {
     title: 'Writing Prompt Generator',
     description: 'A simple tool for writers to jumpstart their creativty get getting a random prompt to write about.',
-    stack: ['NextJS', 'ChakraUI', 'Redux', 'EthersJS', 'HTML', 'CSS', 'TypeScript', 'NodeJS'],
+    stack: ['React Native', 'TypeScript', 'Expo', 'AdMob', 'React Native Reanimated', 'NativeWind'],
     image: '/WPG-icon.png',
     imageAlt: 'Doopmarketeer',
     date: '2023',
