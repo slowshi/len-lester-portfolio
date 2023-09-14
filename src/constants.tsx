@@ -35,7 +35,7 @@ export const info: Info = {
   name: 'Len Lester',
   title: 'Software Engineer',
   location: 'Glendale, CA',
-  description: "I'm an experienced software developer that loves building web applications and tools.",
+  description: 'Software developer who loves learning and building',
   github: 'https://github.com/slowshi',
   linkedin: 'https://www.linkedin.com/in/len-lester/',
   email: 'lenster921@gmail.com',

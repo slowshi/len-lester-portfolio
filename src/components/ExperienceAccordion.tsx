@@ -17,7 +17,7 @@ export default function ExperienceAccordion() {
             </span>
           </AccordionHeader>
           <AccordionBody>
-            <div className="p-4 flex justify-between">
+            <section className="p-4 flex justify-between">
               <div>
                 <div className="mb-8">
                   <p className="monokai-yellow text-base">{project.description}</p>
@@ -52,7 +52,7 @@ export default function ExperienceAccordion() {
                   title={project.imageAlt}
                 ></div>
               </div>
-            </div>
+            </section>
           </AccordionBody>
         </AccordionItem>
       ))}
