@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently -n VITE,TS -c magenta,cyan \"vite\" \"yarn ts --watch\"",
+    "dev": "concurrently -n VITE,TS -c magenta,cyan \"vite\" \"bun ts --watch\"",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "ts": "tsc --noEmit --incremental --preserveWatchOutput --pretty",

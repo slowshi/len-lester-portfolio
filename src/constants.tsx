@@ -44,6 +44,16 @@ export const info: Info = {
 
 export const experience: ExperienceItem[] = [
   {
+    title: 'Owner & Developer',
+    employer: 'Laslow Labs',
+    description: 'Created and managed multiple cross platform React Native apps for Android and iOS.',
+    stack: ['React Native', 'TypeScript', 'Expo'],
+    image: '/laslowlabs.png',
+    imageAlt: 'Laslow Labs',
+    date: '2023 - Present',
+    link: 'https://laslowlabs.com/',
+  },
+  {
     title: 'Senior Software Engineer',
     employer: 'Age of Learning',
     description:
@@ -89,6 +99,36 @@ export const experience: ExperienceItem[] = [
 ]
 
 export const projects: ProjectItem[] = [
+  {
+    title: 'Craps Mobile',
+    description: 'A mobile first Craps simulator that allows users to test strategies and track their roll history.',
+    stack: ['React Native', 'TypeScript', 'Expo', 'AdMob', 'React Native Reanimated', 'NativeWind'],
+    image: '/CM-icon.png',
+    imageAlt: 'Craps Mobile',
+    date: '2023',
+    link: 'https://www.laslowlabs.com/craps-mobile',
+    github: '',
+  },
+  {
+    title: 'Roulette Mobile',
+    description: 'A Roulette simulator with emphasis on minimilism and usability.',
+    stack: ['React Native', 'TypeScript', 'Expo', 'AdMob', 'React Native Reanimated', 'NativeWind'],
+    image: '/RM-icon.png',
+    imageAlt: 'Roulette Mobile',
+    date: '2023',
+    link: 'https://www.laslowlabs.com/roulette-mobile',
+    github: '',
+  },
+  {
+    title: 'Writing Prompt Generator',
+    description: 'A simple tool for writers to jumpstart their creativty get getting a random prompt to write about.',
+    stack: ['NextJS', 'ChakraUI', 'Redux', 'EthersJS', 'HTML', 'CSS', 'TypeScript', 'NodeJS'],
+    image: '/WPG-icon.png',
+    imageAlt: 'Doopmarketeer',
+    date: '2023',
+    link: 'https://www.laslowlabs.com/writing-prompt-generator',
+    github: '',
+  },
   {
     title: 'Doopmarketeer',
     description:
