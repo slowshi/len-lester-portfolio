@@ -1,105 +1,54 @@
-**Len Lester**  
-Glendale, CA 91206	         818-530-3486           [lenster921@gmail.com](mailto:lenster921@gmail.com)	    [Website](https://www.lenlester.dev/)	[LinkedIn](https://www.linkedin.com/in/len-lester/)  
----
+# Len Lester
 
-Full Stack Software Engineer with 15+ years building web, mobile, and backend systems. Proactive collaborator who scales products across growth stages. Willing to work remotely and relocate to New York or EU.  
----
+Glendale, CA · 818-530-3486 · [lenster921@gmail.com](mailto:lenster921@gmail.com) · [lenlester.dev](https://www.lenlester.dev/) · [LinkedIn](https://www.linkedin.com/in/len-lester/)
 
-**SKILLS**  
-JavaScript • TypeScript • Elixir • Phoenix • GraphQL • PHP • Node.js • React • React Native • Next.js • SQL • PostgreSQL • MongoDB • AWS • GCP • Docker • Stripe • Expo  
----
+## Summary
 
-**EXPERIENCE**
+Full-stack software engineer with 15+ years shipping web, mobile, and backend products. Early-stage builder who owns features end to end and scales them through rapid growth and acquisition. Open to remote work and relocation to New York or the EU.
 
-**ScribbleVet \- Remote	10/2023 \- Present**  
-**Senior Software Engineer**  
-Joined as the 6th team member three months after the company was founded — among the longest-tenured engineers through growth to 5,000+ customers and acquisition by Instinct Science in 2026. Built the clinic web app from scratch and continued as its primary owner.
+## Skills
 
-**Built the core clinic web app**
+**Languages:** JavaScript, TypeScript, Elixir, PHP, SQL  
+**Frontend & mobile:** React, React Native, Next.js, Expo, Tailwind  
+**Backend & data:** Phoenix, Ash, GraphQL, Node.js, PostgreSQL  
+**Cloud & tooling:** AWS, GCP, Docker, Stripe, Firebase, Coder, AI/LLM tooling
 
-* Implemented the Next.js application when no web product existed — visit workflow, exam-room recording, AI-assisted note editing, templates, and the day-to-day tools vets use in clinic
-* Shipped Care Cards — AI-generated infographic handouts for pet owners — plus practice handout libraries, dental chart exports, and email-to-client attachments
-* Hardened clinical document generation, recording recovery, and note autosave as usage scaled; extended the product toward unified web and mobile (Tauri)
+## Experience
 
-**Built billing systems**
+### ScribbleVet · Remote
 
-* Implemented subscription billing v2, enterprise payment groups, seat management, and admin billing tools in Elixir/Phoenix and on the frontend
+**Senior Software Engineer** · Oct 2023 – Present
 
-**Built developer infrastructure and AI tooling**
+Joined as the 6th hire three months after founding and became primary owner of the clinic web app — among the longest-tenured engineers through growth to 5,000+ paying users and acquisition by Instinct Science in 2026.
 
-* Rolled out ephemeral Coder workspaces so engineers and coding agents share reproducible full-stack environments
-* Built internal AI tooling that generates QA plans and deployment notes from staging vs production diffs
-* Kept release velocity and quality aligned as the platform scaled to 5,000+ practices
+- Built and own the Next.js clinic app from scratch — exam-room recording, AI-assisted SOAP notes, templates, and the daily clinical workflows used by 5,000+ paying users
+- Shipped Care Cards (AI-generated pet-owner handouts), practice handout libraries, dental chart exports, and email-to-client delivery
+- Hardened the core exam workflow — recording recovery, note autosave, and clinical document generation — to stay reliable as usage scaled
+- Built subscription, seat management, and admin billing tools across the Elixir/Phoenix backend and React frontend
+- Rolled out ephemeral Coder dev workspaces and AI release tooling — automated QA plans, deploy notes, PR risk review, and AI-assisted conflict resolution shared by engineers and coding agents
 
+### Laslow Labs · Glendale, CA
 
-**Laslow Labs \- Glendale, CA	01/2023 \- Present**  
-**Owner & Developer**  
-Founded and shipped five consumer mobile apps — four casino simulators and a creative writing tool — on a shared architecture. Drove indie product velocity from concept to App Store and Google Play with ads and in-app purchases.
+**Owner & Developer** · Jan 2023 – Present
 
-**Shipped a portfolio of mobile products**
+Founded an indie studio shipping consumer mobile apps from concept to App Store and Google Play on a single shared Expo/React Native codebase.
 
-* Released five public apps on iOS and Android from a single shared codebase  
-* Built reusable game engines and UI patterns to accelerate new title launches  
-* Integrated monetization, analytics, and store compliance across the portfolio
+- Shipped blackjack, roulette, craps, and video poker simulators plus a creative writing app from one shared codebase with reusable game engines
+- Built shared infrastructure for monetization (AdMob, in-app purchases), Firebase analytics, and EAS build, submission, and OTA pipelines across the portfolio
+- Built an AI agent runner that turns Linear issues into implemented pull requests via orchestrated coding agents — an autonomous issue-to-PR workflow
+- Consolidated standalone apps into one platform with shared release tooling, cutting the time to launch new titles
 
-**Lowered cost and time to ship new titles**
+### Age of Learning · Glendale, CA
 
-* Consolidated legacy standalone apps into one platform with shared release tooling  
-* Standardized conventions so new games focus on product logic rather than infrastructure  
-* Tuned tablet layouts, session persistence, and premium experiences across apps
+**Senior Software Engineer** · Oct 2010 – Dec 2022
 
+Full-stack work on ABCmouse and Adventure Academy across JavaScript, PHP, MySQL, Docker, and AWS — from Flash/ActionScript through the HTML5 rewrite to adaptive-learning and curriculum tooling.
 
-**Age Of Learning, Inc. / ABCmouse.com \- Glendale, CA	10/2010 \- 12/2022**  
-**Senior Software Engineer	03/2018 \- 12/2022**  
-Led full-stack development across JavaScript, PHP, MySQL, Docker, and AWS. Owned the adaptive learning engine and cross-team tooling for curriculum and production workflows. Contributed to AoflJS, the company's open-source front-end framework.
+- Accelerated curriculum team productivity 300% by migrating relational data to Neptune and building taxonomy mapping tools
+- Saved $100K/month with on-demand EC2 testing environments and a self-service lifecycle tool for product teams
+- Reduced content-tool development time 40–60% with a proprietary JavaScript framework and configurable form builder
 
-**Accelerated productivity by 300% for Curriculum Specialist team**
+## Education
 
-* Assessed graph database options and built APIs to migrate relational data to Neptune  
-* Partnered with curriculum specialists on taxonomy mapping tools for ABCmouse
-
-**Saved $100K per month by improving management of testing environments**
-
-* Built APIs to schedule EC2 environments on demand instead of running continuously  
-* Delivered a frontend tool for product teams to manage environment lifecycles
-
-**Reduced development time 40% with a proprietary JavaScript framework**
-
-* Evaluated modern frameworks and implemented a company-specific solution  
-* Produced base component libraries for managing, organizing, and storing data
-
-**Decreased development time 60% for content tools**
-
-* Programmed a generic JavaScript/JSON form builder with configurable elements  
-* Surveyed stakeholders and built form components aligned to product needs
-
-
-**Software Engineer III	06/2015 \- 03/2018**  
-Built curriculum management tools and a framework for content creation and deployment ahead of Adventure Academy launch.
-
-**Developed JavaScript tools to prepare new product launch**
-
-* Gathered requirements with product owners and project managers  
-* Designed a suite of tools for the Adventure Academy product launch
-
-
-**Software Engineer II	04/2013 \- 06/2015**  
-Led ABCmouse migration from Flash/ActionScript to HTML/JavaScript. Built tools that enabled animators to produce 200+ animations for the revamped site.
-
-**Streamlined animation development process**
-
-* Built a tool to deconstruct Flash animations into images and metadata  
-* Created a JavaScript animation player for 1:1 playback and trained the team on adoption
-
-
-**Flash Developer 	10/2010 \- 04/2013**  
-Designed key ABCmouse features and delivered the first Admin System, improving release times and user experience.
-
-**Delivered content 200% faster with first iteration of Admin system**  
-   
----
-
-**EDUCATION**
-
-California State University: Chico \- Chico, CA  
-Bachelor Of Arts \- Linguistics
+**California State University, Chico** · Chico, CA  
+Bachelor of Arts, Linguistics

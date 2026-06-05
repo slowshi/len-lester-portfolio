@@ -12,7 +12,7 @@
 ## External Constraints
 
 - PDF at `public/resume/lenlester_resume.pdf` may lag markdown until user exports a new file.
-- Resume uses escaped punctuation in markdown (Google Docs export style) — preserve when editing.
+- Resume uses standard Markdown structure (`#` name, `##` sections, `###` roles). Do not reintroduce Google Docs export escapes (`\-`) or tab-aligned contact lines.
 
 ## Known Gotchas
 
