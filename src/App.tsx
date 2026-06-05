@@ -71,8 +71,8 @@ function App() {
         </h1>
         <ul className="mb-20">
           {projects.map((project, index) => (
-            <li>
-              <ProjectCard key={index} project={project}></ProjectCard>
+            <li key={index}>
+              <ProjectCard project={project}></ProjectCard>
             </li>
           ))}
         </ul>
