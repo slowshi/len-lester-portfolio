@@ -48,7 +48,7 @@ export const experience: ExperienceItem[] = [
     title: 'Senior Software Engineer',
     employer: 'ScribbleVet (Kairo Care)',
     description:
-      'Full-stack engineer on ScribbleVet, an AI veterinary documentation platform. Ship features across the Elixir/Phoenix API and Next.js frontend — subscription billing, security hardening, SSO, and mobile release paths. Maintain cloud-scribble dev infrastructure, Coder workspaces, and CI automation.',
+      'Full-stack engineer on ScribbleVet’s AI veterinary documentation platform. Shipped subscription billing v2, enterprise seat reconciliation, and admin tooling on the Elixir API; hardened Stripe webhooks, practice-scoped uploads, and GraphQL tenant boundaries. On the web side, built SSO redirect validation, subscription UX, care card workflows, and mobile signing paths. Maintained Coder workspace automation, CI guardrails, and QA Party — AI release diffing that generates test plans across staging and production.',
     stack: ['Elixir', 'Phoenix', 'Next.js', 'TypeScript', 'GraphQL', 'GCP', 'CircleCI'],
     image: '/scribblevet.png',
     imageAlt: 'ScribbleVet',
@@ -59,7 +59,7 @@ export const experience: ExperienceItem[] = [
     title: 'Owner & Developer',
     employer: 'Laslow Labs',
     description:
-      'Built the Casino Mobile monorepo — a shared Expo/React Native factory for shipping multiple casino apps on one stack. Turborepo workspaces, pure TypeScript game engines, and Clawish agent docs keep conventions explicit for humans and coding agents alike.',
+      'Built and shipped four casino simulators from a shared Expo/React Native monorepo — pure TypeScript game engines, Turborepo workspaces, ads/IAP via RevenueCat and AdMob, and store-ready compliance across iOS and Android. Migrated legacy standalone apps into one factory, wired Firebase analytics, tuned iPad layouts and session persistence, and authored Clawish docs so human and agent contributors share the same conventions.',
     stack: ['React Native', 'Expo', 'TypeScript', 'Turborepo', 'Bun', 'NativeWind', 'Firebase', 'EAS'],
     image: '/laslowlabs.png',
     imageAlt: 'Laslow Labs',
@@ -113,10 +113,10 @@ export const experience: ExperienceItem[] = [
 
 export const projects: ProjectItem[] = [
   {
-    title: 'ScribbleVet Platform',
+    title: 'ScribbleVet',
     description:
-      'cloud-scribble monorepo tying together the Elixir API and Next.js frontend with submodule-based local dev, GCP secret sync, and automated CI guardrails.',
-    stack: ['Elixir', 'Phoenix', 'Next.js', 'TypeScript', 'GCP', 'Shell'],
+      'AI veterinary documentation platform — shipped subscription billing v2, enterprise seat reconciliation, and Stripe webhook hardening on the Elixir API; SSO, care cards, and mobile signing on the Next.js web app; plus Coder workspace automation, CI guardrails, and QA Party release tooling that diffs staging vs production and auto-generates test plans.',
+    stack: ['Elixir', 'Phoenix', 'Next.js', 'TypeScript', 'GraphQL', 'Stripe', 'GCP'],
     image: '/scribblevet.png',
     imageAlt: 'ScribbleVet',
     date: '10/2023 – Present',
@@ -124,48 +124,59 @@ export const projects: ProjectItem[] = [
     github: 'https://github.com/Kairo-Care/cloud-scribble',
   },
   {
-    title: 'Scribble Web',
+    title: 'Craps Mobile',
     description:
-      'Next.js frontend for ScribbleVet — practice subscriptions, SSO, mobile signing workflows, and the primary web experience for veterinary clinics.',
-    stack: ['Next.js', 'TypeScript', 'Bun', 'Tailwind', 'Vercel'],
-    image: '/scribblevet.png',
-    imageAlt: 'Scribble Web',
-    date: '10/2023 – Present',
-    link: 'https://www.scribblevet.com/',
-    github: 'https://github.com/Kairo-Care/scribble-next',
-  },
-  {
-    title: 'Scribble API',
-    description:
-      'Elixir/Phoenix backend powering ScribbleVet — AI-assisted SOAP notes, subscription billing, care cards, webhooks, and practice management APIs.',
-    stack: ['Elixir', 'Phoenix', 'PostgreSQL', 'GraphQL', 'Stripe'],
-    image: '/scribblevet.png',
-    imageAlt: 'Scribble API',
-    date: '10/2023 – Present',
-    link: 'https://www.scribblevet.com/',
-    github: 'https://github.com/Kairo-Care/api',
-  },
-  {
-    title: 'QA Party',
-    description:
-      'AI-powered release tooling that diffs staging vs production across multiple repos and generates QA test plans, deployment notes, and regression checklists.',
-    stack: ['TypeScript', 'GitHub Actions', 'Claude', 'Bun'],
-    image: '/scribblevet.png',
-    imageAlt: 'QA Party',
-    date: '2025 - Present',
-    link: 'https://github.com/Kairo-Care/qa-party',
-    github: 'https://github.com/Kairo-Care/qa-party',
-  },
-  {
-    title: 'Casino Mobile',
-    description:
-      'Laslow Labs monorepo for casino mobile apps — shared Expo shell, pure TypeScript game engines, ads/IAP/compliance packages, and Clawish docs for agent-friendly conventions.',
-    stack: ['React Native', 'Expo', 'TypeScript', 'Turborepo', 'Bun', 'NativeWind', 'EAS'],
+      'Full craps table simulator with pass/don’t, odds, place/lay/buy, field, prop, and hardway bets. Rebuilt on the shared monorepo with responsive phone/iPad layouts, session persistence, and premium ad removal on iOS and Android.',
+    stack: ['React Native', 'Expo', 'TypeScript', 'AdMob', 'RevenueCat', 'NativeWind'],
     image: '/CM-icon.png',
-    imageAlt: 'Casino Mobile',
+    imageAlt: 'Craps Mobile',
     date: '01/2023 – Present',
-    link: 'https://laslowlabs.com/',
-    github: 'https://github.com/slowshi/casino-mobile',
+    link: 'https://www.laslowlabs.com/craps-mobile',
+    github: '',
+  },
+  {
+    title: 'Roulette Mobile',
+    description:
+      'American roulette with minimalist betting UX, haptics, customizable felt colors, and production OTA/store release paths kept in sync across iOS and Android builds.',
+    stack: ['React Native', 'Expo', 'TypeScript', 'AdMob', 'RevenueCat', 'EAS'],
+    image: '/RM-icon.png',
+    imageAlt: 'Roulette Mobile',
+    date: '01/2023 – Present',
+    link: 'https://www.laslowlabs.com/roulette-mobile',
+    github: '',
+  },
+  {
+    title: 'Blackjack Mobile',
+    description:
+      'Newest shipped casino title — configurable deck counts and blackjack payouts, split/surrender engine support, basic strategy helpers, and App Store submission hardening from first production release.',
+    stack: ['React Native', 'Expo', 'TypeScript', 'AdMob', 'RevenueCat', 'Firebase'],
+    image: '/BJM-icon.png',
+    imageAlt: 'Blackjack Mobile',
+    date: '01/2023 – Present',
+    link: 'https://www.laslowlabs.com/blackjack-mobile',
+    github: '',
+  },
+  {
+    title: 'Video Poker Mobile',
+    description:
+      'Jacks-or-better style video poker with hold/draw flow, multi-credit betting, strategy helpers, and tablet-optimized rack layout ported to the shared Expo shell.',
+    stack: ['React Native', 'Expo', 'TypeScript', 'AdMob', 'RevenueCat', 'NativeWind'],
+    image: '/VPM-icon.png',
+    imageAlt: 'Video Poker Mobile',
+    date: '01/2023 – Present',
+    link: 'https://www.laslowlabs.com/video-poker-mobile',
+    github: '',
+  },
+  {
+    title: 'Writing Prompt Generator',
+    description:
+      'Creative writing warm-up app with curated prompt content, animations, large-screen layouts, and premium ad removal — helping writers jumpstart sessions on iOS and Android.',
+    stack: ['React Native', 'Expo', 'TypeScript', 'AdMob', 'RevenueCat'],
+    image: '/WPG-icon.png',
+    imageAlt: 'Writing Prompt Generator',
+    date: '01/2023 – Present',
+    link: 'https://www.laslowlabs.com/writing-prompt-generator',
+    github: '',
   },
   {
     title: 'AofL JS',
