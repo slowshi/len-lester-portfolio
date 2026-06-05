@@ -5,9 +5,9 @@
 
 **Projects card describes the product:** Record exam-room audio → transcribe → generate SOAP notes, care cards, client handouts. Appointments, patients, templates, PIMS integrations, subscriptions. Link: scribblevet.com.
 
-**Experience describes Len's work:** Primary Next.js clinic app owner; Elixir/Phoenix backend (billing, GraphQL); ephemeral Coder workspaces; AI QA/deployment planning. Link: Instinct acquisition announcement.
+**Experience describes Len's work:** Joined early (6th hire); built web app from zero. Core product: visits, recording, notes, Care Cards, handouts. Billing and Coder/AI tooling as separate themes. Link: Instinct acquisition announcement.
 
-**Do not mention:** Internal repo names, commit counts, or duplicate the same sentences across Experience and Projects.
+**Do not mention:** Internal repo names, commit counts, or duplicate the same sentences across Experience and Projects. Avoid leading with SSO, mobile signing, or subscription UX polish.
 
 ## External Constraints
 

@@ -36,7 +36,7 @@ export const info: Info = {
   title: 'Senior Software Engineer',
   location: 'Glendale, CA',
   description:
-    'Next.js frontend owner, billing systems, ephemeral dev environments, and AI-assisted release tooling — plus React Native apps at Laslow Labs.',
+    'Built the clinic web app from scratch and owns the Next.js product — visits, recording, AI notes, Care Cards, and handouts — with Elixir backend work on billing and clinical features.',
   github: 'https://github.com/slowshi',
   linkedin: 'https://www.linkedin.com/in/len-lester/',
   email: 'lenster921@gmail.com',
@@ -48,7 +48,7 @@ export const experience: ExperienceItem[] = [
     title: 'Senior Software Engineer',
     employer: 'ScribbleVet',
     description:
-      'Primary owner of the Next.js clinic app. Also ships backend work in Elixir/Phoenix — subscription billing, GraphQL APIs, and practice workflows. Rolled out ephemeral Coder workspaces for team and agentic development. Built AI tooling that turns release diffs into QA and deployment plans.',
+      'Built the Next.js clinic app from scratch — visit workflow, exam-room recording, AI note editing, templates, Care Card infographic handouts, and client email attachments. Full-stack contributions in Elixir/Phoenix for care cards, handouts, billing v2, and practice APIs. Rolled out Coder workspaces and AI release planning tooling.',
     stack: ['Next.js', 'TypeScript', 'Elixir', 'Phoenix', 'GraphQL', 'Stripe', 'GCP', 'Coder'],
     image: '/scribblevet.png',
     imageAlt: 'ScribbleVet',

@@ -13,20 +13,22 @@ JavaScript • TypeScript • Elixir • Phoenix • GraphQL • PHP • Node.js
 
 **ScribbleVet \- Remote	10/2023 \- Present**  
 **Senior Software Engineer**  
-Core engineer through growth from under 100 to 5,000+ customers and acquisition by Instinct Science in 2026. Primary owner of the web frontend; led billing, developer infrastructure, and AI-assisted release tooling.
+Joined as the 6th team member three months after the company was founded — among the longest-tenured engineers through growth to 5,000+ customers and acquisition by Instinct Science in 2026. Built the clinic web app from scratch and continued as its primary owner.
 
-**Owned the frontend as the product scaled**
+**Built the core clinic web app**
 
-* Primary engineer on the Next.js clinic experience — SSO, mobile signing, and subscription UX as the customer base grew 50x
+* Implemented the Next.js application when no web product existed — visit workflow, exam-room recording, AI-assisted note editing, templates, and the day-to-day tools vets use in clinic
+* Shipped Care Cards — AI-generated infographic handouts for pet owners — plus practice handout libraries, dental chart exports, and email-to-client attachments
+* Hardened clinical document generation, recording recovery, and note autosave as usage scaled; extended the product toward unified web and mobile (Tauri)
 
-**Built billing and developer infrastructure**
+**Built billing systems**
 
-* Implemented Stripe subscription billing, seat management, and practice payment workflows in Elixir and on the frontend
+* Implemented subscription billing v2, enterprise payment groups, seat management, and admin billing tools in Elixir/Phoenix and on the frontend
+
+**Built developer infrastructure and AI tooling**
+
 * Rolled out ephemeral Coder workspaces so engineers and coding agents share reproducible full-stack environments
-
-**Raised release confidence with AI tooling**
-
-* Built internal AI tooling that generates QA plans and deployment notes from staging vs production diffs  
+* Built internal AI tooling that generates QA plans and deployment notes from staging vs production diffs
 * Kept release velocity and quality aligned as the platform scaled to 5,000+ practices
 
 
@@ -94,6 +96,7 @@ Led ABCmouse migration from Flash/ActionScript to HTML/JavaScript. Built tools t
 Designed key ABCmouse features and delivered the first Admin System, improving release times and user experience.
 
 **Delivered content 200% faster with first iteration of Admin system**  
+   
 ---
 
 **EDUCATION**
