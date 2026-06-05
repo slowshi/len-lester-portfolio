@@ -11,41 +11,41 @@ Experienced Full Stack Software Engineer with 15+ years of experience building w
 
 **EXPERIENCE**
 
-**ScribbleVet (Kairo Care) \- Remote	10/2023 \- Present**  
+**ScribbleVet \- Remote	10/2023 \- Present**  
 **Senior Software Engineer**  
-Full-stack engineer on ScribbleVet, an AI veterinary documentation platform. Ship features across the Elixir/Phoenix API and Next.js frontend while maintaining cloud-scribble dev infrastructure, Coder workspaces, and CI automation.
+Full-stack engineer on an AI veterinary documentation platform through rapid growth from under 100 customers to 5,000+ practices. Ship features across the Elixir/Phoenix API and Next.js frontend while improving release confidence, security posture, and dev infrastructure. ScribbleVet was acquired by Instinct Science in 2026.
 
 **Key Competencies:** Elixir, Phoenix, Next.js, TypeScript, GraphQL, GCP, Stripe, CircleCI
 
-**Built subscription billing and practice management flows across API and web**
+**Built subscription billing and practice management at scale**
 
 * Implemented Stripe-backed subscription billing, care cards, and practice management APIs in the Elixir/Phoenix backend  
 * Delivered practice subscriptions, SSO, and mobile signing workflows in the Next.js frontend  
 * Hardened security posture and authentication paths for clinic-facing production traffic
 
-**Improved release confidence with dev infrastructure and AI-powered QA tooling**
+**Improved release confidence and engineering velocity**
 
-* Maintained the cloud-scribble monorepo tying together API and frontend with GCP secret sync and CI guardrails  
-* Set up Coder workspaces and automated CI pipelines for multi-repo local development  
-* Built QA Party — AI-powered release tooling that diffs staging vs production and generates test plans and deployment notes
+* Strengthened CI guardrails and automated dev environments for consistent local and pipeline workflows  
+* Built AI-assisted release validation that diffs staging vs production and generates test plans and deployment notes  
+* Supported multi-tenant boundaries and compliance requirements as customer base grew to 5,000+ practices
 
 
 **Laslow Labs \- Glendale, CA	01/2023 \- Present**  
 **Owner & Developer**  
-Built the Casino Mobile monorepo — a shared Expo/React Native factory for shipping multiple casino apps on one stack. Turborepo workspaces, pure TypeScript game engines, and Clawish agent docs keep conventions explicit for humans and coding agents alike.
+Built and shipped five consumer mobile apps — four casino simulators and a creative writing tool — on a shared React Native stack. Pure TypeScript game engines, ads and in-app purchases, and store-ready compliance across iOS and Android.
 
-**Key Competencies:** TypeScript, React Native, Expo, Turborepo, Bun, NativeWind, Firebase, EAS
+**Key Competencies:** TypeScript, React Native, Expo, NativeWind, Firebase, EAS, RevenueCat
 
-**Shipped a monorepo factory for casino mobile apps**
+**Shipped multiple casino and utility apps from a shared mobile stack**
 
-* Architected Turborepo and Bun workspaces with shared packages for ads, IAP, compliance, theming, and OTA updates  
-* Implemented pure TypeScript game engines decoupled from React for testable roulette, craps, and video poker logic  
-* Published multiple casino apps to App Store and Google Play with EAS Build, Firebase, and RevenueCat integrations
+* Consolidated legacy standalone apps into one codebase with shared packages for ads, IAP, compliance, theming, and over-the-air updates  
+* Implemented pure TypeScript game engines decoupled from React for testable roulette, craps, blackjack, and video poker logic  
+* Published multiple apps to App Store and Google Play with coordinated releases, Firebase analytics, and RevenueCat integrations
 
-**Established agent-friendly conventions with Clawish documentation**
+**Lowered cost and time to ship new titles**
 
-* Authored in-repo Clawish context for Cursor, Claude Code, and CI so humans and coding agents share explicit conventions  
-* Drove marginal cost of new game apps toward "implement the engine + design the table screen"
+* Standardized conventions and reusable UI patterns so new games focus on engine logic and table screens  
+* Tuned responsive phone and iPad layouts, session persistence, and premium ad removal across the app portfolio
 
 
 **Age Of Learning, Inc. / ABCmouse.com \- Glendale, CA	10/2010 \- 12/2022**  
