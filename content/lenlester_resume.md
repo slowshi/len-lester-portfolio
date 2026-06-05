@@ -13,19 +13,22 @@ JavaScript • TypeScript • Elixir • Phoenix • GraphQL • PHP • Node.js
 
 **ScribbleVet \- Remote	10/2023 \- Present**  
 **Senior Software Engineer**  
-Core engineer on an AI veterinary documentation platform through growth from under 100 to 5,000+ customers. Owned billing, security, and release workflows as the company scaled. ScribbleVet was acquired by Instinct Science in 2026.
+Core engineer through growth from under 100 to 5,000+ customers and acquisition by Instinct Science in 2026. Primary owner of the web frontend; led billing, developer infrastructure, and AI-assisted release tooling.
 
-**Scaled subscription billing and practice operations**
+**Owned the frontend as the product scaled**
 
-* Launched subscription billing and practice management for a rapidly growing customer base  
-* Delivered SSO and mobile signing workflows for clinic teams in the field  
-* Strengthened security and authentication for production clinic traffic
+* Authored the majority of frontend commits (~1,100+) since joining — primary engineer on the Next.js clinic experience  
+* Shipped SSO, mobile signing, and subscription UX as the customer base grew 50x
 
-**Raised release confidence as the platform grew**
+**Built billing and developer infrastructure**
 
-* Built automated release validation and deployment workflows across staging and production  
-* Improved CI guardrails and developer environments to keep pace with customer growth  
-* Supported multi-tenant compliance requirements as the user base expanded to 5,000+ practices
+* Implemented Stripe subscription billing, seat management, and practice payment workflows  
+* Rolled out ephemeral Coder workspaces so engineers and coding agents share reproducible full-stack environments
+
+**Raised release confidence with AI tooling**
+
+* Built internal AI tooling that generates QA plans and deployment notes from staging vs production diffs  
+* Kept release velocity and quality aligned as the platform scaled to 5,000+ practices
 
 
 **Laslow Labs \- Glendale, CA	01/2023 \- Present**  

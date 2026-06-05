@@ -36,7 +36,7 @@ export const info: Info = {
   title: 'Senior Software Engineer',
   location: 'Glendale, CA',
   description:
-    'Full-stack engineer on Elixir/Phoenix and Next.js platforms, plus React Native apps with TypeScript game engines, billing integrations, and release automation.',
+    'Next.js frontend owner, billing systems, ephemeral dev environments, and AI-assisted release tooling — plus React Native apps at Laslow Labs.',
   github: 'https://github.com/slowshi',
   linkedin: 'https://www.linkedin.com/in/len-lester/',
   email: 'lenster921@gmail.com',
@@ -48,8 +48,8 @@ export const experience: ExperienceItem[] = [
     title: 'Senior Software Engineer',
     employer: 'ScribbleVet',
     description:
-      'Full-stack work on an AI veterinary documentation platform across Elixir/Phoenix API and Next.js web. Built Stripe subscription billing, care cards, and practice management endpoints; delivered SSO, mobile signing, and clinic-facing auth flows on the frontend. Hardened multi-tenant security and compliance paths for production traffic. Improved release quality with CI guardrails, automated dev environments, and AI-assisted staging/production validation.',
-    stack: ['Elixir', 'Phoenix', 'Next.js', 'TypeScript', 'GraphQL', 'Stripe', 'GCP', 'CircleCI'],
+      'Primary owner of the Next.js frontend — majority of commits since joining (~1,100+). Built Stripe subscription billing and seat workflows. Rolled out ephemeral Coder workspaces so the team (and coding agents) share reproducible full-stack environments. Shipped AI tooling that turns staging vs production diffs into QA and deployment plans.',
+    stack: ['Next.js', 'TypeScript', 'Elixir', 'Phoenix', 'GraphQL', 'Stripe', 'GCP', 'Coder'],
     image: '/scribblevet.png',
     imageAlt: 'ScribbleVet',
     date: '10/2023 – Present',
@@ -115,8 +115,8 @@ export const projects: ProjectItem[] = [
   {
     title: 'ScribbleVet',
     description:
-      'Full-stack platform work: Stripe subscription billing and seat reconciliation in Elixir/Phoenix, practice workflows and SSO in Next.js, mobile signing for field use. Security hardening, multi-tenant boundaries, and compliance for clinic traffic. Release automation with CI guardrails and AI-assisted staging vs production validation.',
-    stack: ['Elixir', 'Phoenix', 'Next.js', 'TypeScript', 'GraphQL', 'Stripe', 'GCP'],
+      'Next.js frontend (~1,100+ commits, majority share since 10/2023). Stripe billing and subscriptions. Ephemeral Coder workspaces for team and agentic development. AI-generated QA and deployment plans from release diffs.',
+    stack: ['Next.js', 'TypeScript', 'Stripe', 'GraphQL', 'Elixir', 'GCP', 'Coder'],
     image: '/scribblevet.png',
     imageAlt: 'ScribbleVet',
     date: '10/2023 – Present',
