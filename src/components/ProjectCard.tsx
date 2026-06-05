@@ -12,7 +12,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <img
           src={project.image}
           alt={project.imageAlt}
-          className="aspect-square w-full object-contain bg-[#1e201b] p-4"
+          className="aspect-square w-full object-contain monokai-bg-black-2 p-4"
         />
       </div>
       <div className="rounded-md lg:rounded-l-none lg:border-l-0 p-6 flex flex-col justify-between leading-normal">
