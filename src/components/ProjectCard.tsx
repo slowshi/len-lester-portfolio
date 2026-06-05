@@ -8,11 +8,13 @@ type ProjectCardProps = {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="w-full max-w-full lg:flex shadow-lg rounded-md mb-6 monokai-bg-black-2">
-      <div
-        className="lg:h-auto lg:w-4/12 flex-none bg-cover rounded-t-md lg:rounded-r-none lg:rounded-l text-center overflow-hidde"
-        style={{ backgroundImage: `url(${project.image})` }}
-        title={project.imageAlt}
-      ></div>
+      <div className="w-full lg:w-48 xl:w-56 flex-none shrink-0 overflow-hidden rounded-t-md lg:rounded-r-none lg:rounded-l-md">
+        <img
+          src={project.image}
+          alt={project.imageAlt}
+          className="aspect-square w-full object-contain bg-[#1e201b] p-4"
+        />
+      </div>
       <div className="rounded-md lg:rounded-l-none lg:border-l-0 p-6 flex flex-col justify-between leading-normal">
         <div className="mb-8">
           <div className="monokai-white font-bold text-xl mb-8">
