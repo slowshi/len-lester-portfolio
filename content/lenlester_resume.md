@@ -2,109 +2,94 @@
 Glendale, CA 91206	         818-530-3486           [lenster921@gmail.com](mailto:lenster921@gmail.com)	    [Website](https://www.lenlester.dev/)	[LinkedIn](https://www.linkedin.com/in/len-lester/)  
 ---
 
-Experienced Full Stack Software Engineer with 15+ years of experience building web, mobile, and backend systems. Proactive team player with keen insight at developing, managing, and scaling initiatives across multi-disciplinary environments. Proficient working within modern UI and API frameworks while ensuring technical usability, security, and accessibility for positive user experiences. Willing to work remotely and relocate to New York or EU.  
+Full Stack Software Engineer with 15+ years building web, mobile, and backend systems. Proactive collaborator who scales products across growth stages. Willing to work remotely and relocate to New York or EU.  
 ---
 
 **SKILLS**  
-      JavaScript • TypeScript • Elixir • Phoenix • GraphQL • PHP • Node.JS • HTML • CSS • React • React Native • Next.JS • Tailwind • Redux • Zustand • SQL • NoSQL • MongoDB • PostgreSQL • Webpack • Expo • Jest • Express • Jenkins • Docker • AWS • GCP • Turborepo • Bun • Stripe • Firebase • EAS  
+JavaScript • TypeScript • Elixir • Phoenix • GraphQL • PHP • Node.js • React • React Native • Next.js • SQL • PostgreSQL • MongoDB • AWS • GCP • Docker • Stripe • Expo  
 ---
 
 **EXPERIENCE**
 
 **ScribbleVet \- Remote	10/2023 \- Present**  
 **Senior Software Engineer**  
-Full-stack engineer on an AI veterinary documentation platform through rapid growth from under 100 customers to 5,000+ practices. Ship features across the Elixir/Phoenix API and Next.js frontend while improving release confidence, security posture, and dev infrastructure. ScribbleVet was acquired by Instinct Science in 2026.
+Core engineer on an AI veterinary documentation platform through growth from under 100 to 5,000+ customers. Owned billing, security, and release workflows as the company scaled. ScribbleVet was acquired by Instinct Science in 2026.
 
-**Key Competencies:** Elixir, Phoenix, Next.js, TypeScript, GraphQL, GCP, Stripe, CircleCI
+**Scaled subscription billing and practice operations**
 
-**Built subscription billing and practice management at scale**
+* Launched subscription billing and practice management for a rapidly growing customer base  
+* Delivered SSO and mobile signing workflows for clinic teams in the field  
+* Strengthened security and authentication for production clinic traffic
 
-* Implemented Stripe-backed subscription billing, care cards, and practice management APIs in the Elixir/Phoenix backend  
-* Delivered practice subscriptions, SSO, and mobile signing workflows in the Next.js frontend  
-* Hardened security posture and authentication paths for clinic-facing production traffic
+**Raised release confidence as the platform grew**
 
-**Improved release confidence and engineering velocity**
-
-* Strengthened CI guardrails and automated dev environments for consistent local and pipeline workflows  
-* Built AI-assisted release validation that diffs staging vs production and generates test plans and deployment notes  
-* Supported multi-tenant boundaries and compliance requirements as customer base grew to 5,000+ practices
+* Built automated release validation and deployment workflows across staging and production  
+* Improved CI guardrails and developer environments to keep pace with customer growth  
+* Supported multi-tenant compliance requirements as the user base expanded to 5,000+ practices
 
 
 **Laslow Labs \- Glendale, CA	01/2023 \- Present**  
 **Owner & Developer**  
-Built and shipped five consumer mobile apps — four casino simulators and a creative writing tool — on a shared React Native stack. Pure TypeScript game engines, ads and in-app purchases, and store-ready compliance across iOS and Android.
+Founded and shipped five consumer mobile apps — four casino simulators and a creative writing tool — on a shared architecture. Drove indie product velocity from concept to App Store and Google Play with ads and in-app purchases.
 
-**Key Competencies:** TypeScript, React Native, Expo, NativeWind, Firebase, EAS, RevenueCat
+**Shipped a portfolio of mobile products**
 
-**Shipped multiple casino and utility apps from a shared mobile stack**
-
-* Consolidated legacy standalone apps into one codebase with shared packages for ads, IAP, compliance, theming, and over-the-air updates  
-* Implemented pure TypeScript game engines decoupled from React for testable roulette, craps, blackjack, and video poker logic  
-* Published multiple apps to App Store and Google Play with coordinated releases, Firebase analytics, and RevenueCat integrations
+* Released five public apps on iOS and Android from a single shared codebase  
+* Built reusable game engines and UI patterns to accelerate new title launches  
+* Integrated monetization, analytics, and store compliance across the portfolio
 
 **Lowered cost and time to ship new titles**
 
-* Standardized conventions and reusable UI patterns so new games focus on engine logic and table screens  
-* Tuned responsive phone and iPad layouts, session persistence, and premium ad removal across the app portfolio
+* Consolidated legacy standalone apps into one platform with shared release tooling  
+* Standardized conventions so new games focus on product logic rather than infrastructure  
+* Tuned tablet layouts, session persistence, and premium experiences across apps
 
 
 **Age Of Learning, Inc. / ABCmouse.com \- Glendale, CA	10/2010 \- 12/2022**  
 **Senior Software Engineer	03/2018 \- 12/2022**  
-Worked on all end-to-end development process updates, utilizing JavaScript, PHP, MySQL, Docker, and AWS services. Led implementation for adaptive learning engine, while ensuring compliance with company goals. Worked across teams on software and production implementation.
-
-**Key Competencies**: JavaScript, PHP, MYSQL, HTML, CSS, AWS, Docker, Jenkins, Process Improvement
+Led full-stack development across JavaScript, PHP, MySQL, Docker, and AWS. Owned the adaptive learning engine and cross-team tooling for curriculum and production workflows. Contributed to AoflJS, the company's open-source front-end framework.
 
 **Accelerated productivity by 300% for Curriculum Specialist team**
 
-* Assessed strengths and weaknesses of potential databases such as Neptune Graph  
-* Generated backend API for migration of relational tables to graph database  
-* Partnered with curriculum specialists, creating tools for mapping taxonomies on ABCMouse
+* Assessed graph database options and built APIs to migrate relational data to Neptune  
+* Partnered with curriculum specialists on taxonomy mapping tools for ABCmouse
 
 **Saved $100K per month by improving management of testing environments**
 
-* Created APls to eliminate running EC2 instances and go live for limited times  
-* Built a frontend tool to allow product teams to remove or extend the life of their EC2 instances
+* Built APIs to schedule EC2 environments on demand instead of running continuously  
+* Delivered a frontend tool for product teams to manage environment lifecycles
 
-**Reduced development time 40% by producing faster, more efficient proprietary JavaScript framework**
+**Reduced development time 40% with a proprietary JavaScript framework**
 
-* Evaluated modern frameworks, to consider most important functionality and utilities  
-* Implemented proprietary JavaScript framework while ensuring compliance with needs of company  
+* Evaluated modern frameworks and implemented a company-specific solution  
 * Produced base component libraries for managing, organizing, and storing data
 
-**Decreased by 60% development time of content tools and money spent for dedicated engineers**
+**Decreased development time 60% for content tools**
 
-* Programmed generic JavaScript/JSON form builder  
-* Surveyed project managers and product owners, gaining insight on additional form elements needed  
-* Built specific form elements to align with differing product needs
+* Programmed a generic JavaScript/JSON form builder with configurable elements  
+* Surveyed stakeholders and built form components aligned to product needs
 
 
 **Software Engineer III	06/2015 \- 03/2018**  
-Developed various curriculum management tools, delivering helpful features and improvements with solid technical foundations. Composed framework for creating tools to facilitate the creation and deployment of content for products.
+Built curriculum management tools and a framework for content creation and deployment ahead of Adventure Academy launch.
 
-**Key Competencies:** JavaScript, PHP, MYSQL, HTML, CSS, AngularJS, User Experience, Process Improvement
+**Developed JavaScript tools to prepare new product launch**
 
-**Developed series of JavaScript tools to prepare new product launch**
-
-* Negotiated with product owners and project managers on gathering requirements for tools  
-* Designed suite of tools in preparation for launch of new product
+* Gathered requirements with product owners and project managers  
+* Designed a suite of tools for the Adventure Academy product launch
 
 
 **Software Engineer II	04/2013 \- 06/2015**  
-Collaborated across teams to the ABCMouse's site from Flash/ActionScript to HTML/JavaScript, ensuring better end-to-end user experience. Designed tools that enabled animators to create 200+ high-quality animations for activities and games on revamped site.
+Led ABCmouse migration from Flash/ActionScript to HTML/JavaScript. Built tools that enabled animators to produce 200+ animations for the revamped site.
 
-**Key Competencies:** JavaScript, HTML, CSS, ActionScrip/Flash, PHP, MYSQL, Research & Development, Mentoring
+**Streamlined animation development process**
 
-**Optimized time and revenue by streamlining animation development process**
-
-* Developed tool to deconstruct Flash Animations into a images and metadata  
-* Created and optimized JavaScript Animation Player to allow for 1:1 animation  
-* Trained team of programmers on how to execute tools, along with troubleshooting needs
+* Built a tool to deconstruct Flash animations into images and metadata  
+* Created a JavaScript animation player for 1:1 playback and trained the team on adoption
 
 
 **Flash Developer 	10/2010 \- 04/2013**  
-Designed and implemented key features, increasing user engagement. Developed app's first iteration of Admin System, using JavaScript front-end PHP and MySQL back-end, resulting in faster release times and better user experience.
-
-**Key Competencies:** Flash/ActionScript, PHP, MYSQL, JavaScript, HTML, CSS, Web Development, Data Structures
+Designed key ABCmouse features and delivered the first Admin System, improving release times and user experience.
 
 **Delivered content 200% faster with first iteration of Admin system**  
 ---

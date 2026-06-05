@@ -36,7 +36,7 @@ export const info: Info = {
   title: 'Senior Software Engineer',
   location: 'Glendale, CA',
   description:
-    'Full-stack engineer building AI-powered veterinary software at ScribbleVet and consumer mobile apps at Laslow Labs — Elixir, Next.js, React Native, and TypeScript.',
+    'Full-stack engineer on Elixir/Phoenix and Next.js platforms, plus React Native apps with TypeScript game engines, billing integrations, and release automation.',
   github: 'https://github.com/slowshi',
   linkedin: 'https://www.linkedin.com/in/len-lester/',
   email: 'lenster921@gmail.com',
@@ -48,8 +48,8 @@ export const experience: ExperienceItem[] = [
     title: 'Senior Software Engineer',
     employer: 'ScribbleVet',
     description:
-      'Full-stack engineer on an AI veterinary documentation platform through rapid growth from under 100 customers to 5,000+ practices. Shipped subscription billing at scale, enterprise seat management, and practice workflows across Elixir/Phoenix API and Next.js web; hardened Stripe integrations, multi-tenant security, and clinic-facing authentication. Delivered SSO, care card workflows, and mobile signing for field use. Improved release confidence with CI guardrails, automated dev environments, and AI-assisted release validation across staging and production. ScribbleVet was acquired by Instinct Science in 2026.',
-    stack: ['Elixir', 'Phoenix', 'Next.js', 'TypeScript', 'GraphQL', 'GCP', 'CircleCI'],
+      'Full-stack work on an AI veterinary documentation platform across Elixir/Phoenix API and Next.js web. Built Stripe subscription billing, care cards, and practice management endpoints; delivered SSO, mobile signing, and clinic-facing auth flows on the frontend. Hardened multi-tenant security and compliance paths for production traffic. Improved release quality with CI guardrails, automated dev environments, and AI-assisted staging/production validation.',
+    stack: ['Elixir', 'Phoenix', 'Next.js', 'TypeScript', 'GraphQL', 'Stripe', 'GCP', 'CircleCI'],
     image: '/scribblevet.png',
     imageAlt: 'ScribbleVet',
     date: '10/2023 – Present',
@@ -59,7 +59,7 @@ export const experience: ExperienceItem[] = [
     title: 'Owner & Developer',
     employer: 'Laslow Labs',
     description:
-      'Built and shipped five consumer mobile apps — four casino simulators and a creative writing tool — on a shared React Native stack with pure TypeScript game engines, ads and in-app purchases, Firebase analytics, and store-ready compliance across iOS and Android. Consolidated legacy standalone apps into one codebase to accelerate releases, improve tablet layouts and session persistence, and lower the cost of shipping new titles.',
+      'Built five consumer mobile apps on a shared React Native / Expo stack with pure TypeScript game engines decoupled from UI. Consolidated legacy apps into one monorepo with shared packages for ads, in-app purchases, theming, analytics, and over-the-air updates. Shipped coordinated iOS and Android releases with RevenueCat monetization and store compliance tooling.',
     stack: ['React Native', 'Expo', 'TypeScript', 'NativeWind', 'Firebase', 'EAS', 'RevenueCat'],
     image: '/laslowlabs.png',
     imageAlt: 'Laslow Labs',
@@ -115,7 +115,7 @@ export const projects: ProjectItem[] = [
   {
     title: 'ScribbleVet',
     description:
-      'AI veterinary documentation platform that scaled from under 100 customers to 5,000+ practices. Full-stack work across Elixir API and Next.js web: subscription billing at scale, enterprise seat reconciliation, Stripe reliability, SSO, care cards, and mobile signing. Security, compliance, and multi-tenant boundaries for clinic production traffic; release quality via CI guardrails and AI-assisted staging/production validation. Acquired by Instinct Science in 2026.',
+      'Full-stack platform work: Stripe subscription billing and seat reconciliation in Elixir/Phoenix, practice workflows and SSO in Next.js, mobile signing for field use. Security hardening, multi-tenant boundaries, and compliance for clinic traffic. Release automation with CI guardrails and AI-assisted staging vs production validation.',
     stack: ['Elixir', 'Phoenix', 'Next.js', 'TypeScript', 'GraphQL', 'Stripe', 'GCP'],
     image: '/scribblevet.png',
     imageAlt: 'ScribbleVet',
@@ -126,7 +126,7 @@ export const projects: ProjectItem[] = [
   {
     title: 'Craps Mobile',
     description:
-      'Full craps table simulator with pass/don’t, odds, place/lay/buy, field, prop, and hardway bets. Responsive phone and iPad layouts, session persistence, and premium ad removal on iOS and Android.',
+      "Full craps table simulator with pass/don't, odds, place/lay/buy, field, prop, and hardway bets. Pure TypeScript engine with responsive phone and iPad layouts, session persistence, and premium ad removal.",
     stack: ['React Native', 'Expo', 'TypeScript', 'AdMob', 'RevenueCat', 'NativeWind'],
     image: '/CM-icon.png',
     imageAlt: 'Craps Mobile',
@@ -137,7 +137,7 @@ export const projects: ProjectItem[] = [
   {
     title: 'Roulette Mobile',
     description:
-      'American roulette with minimalist betting UX, haptics, customizable felt colors, and coordinated iOS and Android releases with over-the-air updates.',
+      'American roulette with minimalist betting UX, haptics, customizable felt colors, and coordinated iOS/Android releases with EAS over-the-air updates.',
     stack: ['React Native', 'Expo', 'TypeScript', 'AdMob', 'RevenueCat', 'EAS'],
     image: '/RM-icon.png',
     imageAlt: 'Roulette Mobile',
@@ -148,7 +148,7 @@ export const projects: ProjectItem[] = [
   {
     title: 'Blackjack Mobile',
     description:
-      'Newest shipped casino title — configurable deck counts and blackjack payouts, split/surrender engine support, basic strategy helpers, and App Store submission hardening from first production release.',
+      'Configurable deck counts and blackjack payouts, split/surrender engine support, basic strategy helpers, and App Store submission hardening from first production release.',
     stack: ['React Native', 'Expo', 'TypeScript', 'AdMob', 'RevenueCat', 'Firebase'],
     image: '/BJM-icon.png',
     imageAlt: 'Blackjack Mobile',
@@ -159,7 +159,7 @@ export const projects: ProjectItem[] = [
   {
     title: 'Video Poker Mobile',
     description:
-      'Jacks-or-better style video poker with hold/draw flow, multi-credit betting, strategy helpers, and tablet-optimized rack layout on iOS and Android.',
+      'Jacks-or-better style video poker with hold/draw flow, multi-credit betting, strategy helpers, and tablet-optimized rack layout.',
     stack: ['React Native', 'Expo', 'TypeScript', 'AdMob', 'RevenueCat', 'NativeWind'],
     image: '/VPM-icon.png',
     imageAlt: 'Video Poker Mobile',
@@ -170,7 +170,7 @@ export const projects: ProjectItem[] = [
   {
     title: 'Writing Prompt Generator',
     description:
-      'Creative writing warm-up app with curated prompt content, animations, large-screen layouts, and premium ad removal — helping writers jumpstart sessions on iOS and Android.',
+      'Creative writing warm-up app with curated prompt content, animations, large-screen layouts, and premium ad removal on iOS and Android.',
     stack: ['React Native', 'Expo', 'TypeScript', 'AdMob', 'RevenueCat'],
     image: '/WPG-icon.png',
     imageAlt: 'Writing Prompt Generator',
