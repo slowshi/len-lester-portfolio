@@ -1,0 +1,230 @@
+name: Promote Memory to Docs
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_branch:
+        description: "Branch to cut from (where memory files live)"
+        type: string
+        default: main
+      dry_run:
+        description: "Preview only — show what would be promoted without creating a PR"
+        type: boolean
+        default: false
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd
+        with:
+          ref: ${{ inputs.source_branch }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Install Cursor CLI
+        run: |
+          curl https://cursor.com/install -fsS | bash
+          echo "$HOME/.cursor/bin" >> $GITHUB_PATH
+
+      - name: Run promotion agent
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          SOURCE_BRANCH: ${{ inputs.source_branch }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          agent \
+            --model composer-2.5 \
+            --trust \
+            -p "$(cat .clawish/skills/feature-docs/PROMOTE_PROMPT.md)"
+
+      - name: Delete marked memory files
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          marker = "PROMOTED_MEMORY_DELETE"
+          memory_dirs = [Path(".clawish/memory")]
+          memory_dirs.extend(Path("apps").glob("*/.clawish/memory"))
+
+          for memory_dir in memory_dirs:
+              if not memory_dir.is_dir():
+                  continue
+              for path in memory_dir.glob("*.md"):
+                  if path.name == ".gitkeep":
+                      continue
+                  if path.read_text(encoding="utf-8").strip() == marker:
+                      path.unlink()
+          PY
+
+      - name: Validate promoted file set
+        id: validate_changes
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          if [ -z "$(git status --short)" ]; then
+            echo "No file changes detected; nothing to promote."
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "has_changes=true" >> "$GITHUB_OUTPUT"
+
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess
+          import sys
+
+          def is_root_clawish_path(path):
+              return path == ".clawish" or path.startswith(".clawish/")
+
+          def is_app_clawish_path(path):
+              parts = Path(path).parts
+              return len(parts) >= 3 and parts[0] == "apps" and parts[2] == ".clawish"
+
+          def is_memory_path(path):
+              parts = Path(path).parts
+              return (
+                  len(parts) >= 3
+                  and parts[0] == ".clawish"
+                  and parts[1] == "memory"
+              ) or (
+                  len(parts) >= 5
+                  and parts[0] == "apps"
+                  and parts[2] == ".clawish"
+                  and parts[3] == "memory"
+              )
+
+          changed = [
+              line
+              for line in subprocess.check_output(
+                  ["git", "status", "--short"], text=True
+              ).splitlines()
+              if line.strip()
+          ]
+
+          disallowed = []
+          for line in changed:
+              status = line[:2]
+              path = line[3:]
+              if " -> " in path:
+                  paths_to_check = path.split(" -> ", 1)
+                  path = paths_to_check[-1]
+              else:
+                  paths_to_check = [path]
+              allowed = all(
+                  is_root_clawish_path(candidate) or is_app_clawish_path(candidate)
+                  for candidate in paths_to_check
+              )
+              if not allowed:
+                  disallowed.append(f"{status} {path}")
+                  continue
+
+              if is_memory_path(path):
+                  if Path(path).name == ".gitkeep":
+                      disallowed.append(f"{status} {path}")
+                      continue
+                  if status.strip() != "D":
+                      disallowed.append(f"{status} {path}")
+
+          if disallowed:
+              print("Unexpected file changes detected:")
+              for entry in disallowed:
+                  print(entry)
+              sys.exit(1)
+          PY
+
+      - name: Configure git auth
+        if: ${{ inputs.dry_run != true && steps.validate_changes.outputs.has_changes == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git checkout -B "chore/memory-promotion-$(date +%Y-%m-%d)"
+          git config --unset-all http.https://github.com/.extraheader || true
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push promotion
+        if: ${{ inputs.dry_run != true && steps.validate_changes.outputs.has_changes == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --short)" ]; then
+            echo "No changes to commit; stopping."
+            exit 0
+          fi
+
+          git add -A
+          git commit -m "chore: promote clawish memory ($(date +%Y-%m-%d))"
+          git push -u origin HEAD --force
+
+      - name: Create promotion pull request
+        if: ${{ inputs.dry_run != true && steps.validate_changes.outputs.has_changes == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_BRANCH: ${{ inputs.source_branch }}
+        run: |
+          BRANCH="chore/memory-promotion-$(date +%Y-%m-%d)"
+          EXISTING_PR=$(gh pr list --head "$BRANCH" --json number --jq '.[0].number')
+          if [ -n "$EXISTING_PR" ]; then
+            echo "PR already exists: #$EXISTING_PR"
+            exit 0
+          fi
+
+          python3 - <<'PY' > /tmp/promote-memory-pr-body.md
+          from pathlib import Path
+          import subprocess
+
+          def is_memory_path(path):
+              parts = Path(path).parts
+              return (
+                  len(parts) >= 3
+                  and parts[0] == ".clawish"
+                  and parts[1] == "memory"
+              ) or (
+                  len(parts) >= 5
+                  and parts[0] == "apps"
+                  and parts[2] == ".clawish"
+                  and parts[3] == "memory"
+              )
+
+          deleted_files = subprocess.check_output(
+              ["git", "diff", "--name-only", "HEAD^", "HEAD", "--diff-filter=D"],
+              text=True,
+          ).splitlines()
+          deleted_memory_files = [
+              path for path in deleted_files if is_memory_path(path)
+          ]
+          modified_targets = subprocess.check_output(
+              ["git", "diff", "--name-only", "HEAD^", "HEAD", "--diff-filter=AMR"],
+              text=True,
+          ).splitlines()
+
+          promoted_rows = []
+          for memory_file in deleted_memory_files:
+              targets = [target for target in modified_targets if not is_memory_path(target)]
+              target_label = ", ".join(targets) if targets else "See commit"
+              promoted_rows.append(f"| {memory_file} | {target_label} |")
+
+          print("## Memory promotions\n")
+          print("| Memory file | Target |")
+          print("|-------------|--------|")
+          if promoted_rows:
+              for row in promoted_rows:
+                  print(row)
+          else:
+              print("| None | No memory files were deleted |")
+          print("\n## Notes\n")
+          print("- This PR was created by the promote-memory workflow after validating that only approved root or app-local `.clawish` targets were modified.")
+          PY
+
+          gh pr create \
+            --base "$SOURCE_BRANCH" \
+            --title "chore: promote clawish memory ($(date +%Y-%m-%d))" \
+            --body-file /tmp/promote-memory-pr-body.md

@@ -1,0 +1,1 @@
+.clawish/AGENTS.md
