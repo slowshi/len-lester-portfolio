@@ -17,12 +17,11 @@ Core engineer through growth from under 100 to 5,000+ customers and acquisition 
 
 **Owned the frontend as the product scaled**
 
-* Authored the majority of frontend commits (~1,100+) since joining — primary engineer on the Next.js clinic experience  
-* Shipped SSO, mobile signing, and subscription UX as the customer base grew 50x
+* Primary engineer on the Next.js clinic experience — SSO, mobile signing, and subscription UX as the customer base grew 50x
 
 **Built billing and developer infrastructure**
 
-* Implemented Stripe subscription billing, seat management, and practice payment workflows  
+* Implemented Stripe subscription billing, seat management, and practice payment workflows in Elixir and on the frontend
 * Rolled out ephemeral Coder workspaces so engineers and coding agents share reproducible full-stack environments
 
 **Raised release confidence with AI tooling**

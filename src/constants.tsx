@@ -48,7 +48,7 @@ export const experience: ExperienceItem[] = [
     title: 'Senior Software Engineer',
     employer: 'ScribbleVet',
     description:
-      'Primary owner of the Next.js frontend — majority of commits since joining (~1,100+). Built Stripe subscription billing and seat workflows. Rolled out ephemeral Coder workspaces so the team (and coding agents) share reproducible full-stack environments. Shipped AI tooling that turns staging vs production diffs into QA and deployment plans.',
+      'Primary owner of the Next.js clinic app. Also ships backend work in Elixir/Phoenix — subscription billing, GraphQL APIs, and practice workflows. Rolled out ephemeral Coder workspaces for team and agentic development. Built AI tooling that turns release diffs into QA and deployment plans.',
     stack: ['Next.js', 'TypeScript', 'Elixir', 'Phoenix', 'GraphQL', 'Stripe', 'GCP', 'Coder'],
     image: '/scribblevet.png',
     imageAlt: 'ScribbleVet',
@@ -115,12 +115,12 @@ export const projects: ProjectItem[] = [
   {
     title: 'ScribbleVet',
     description:
-      'Next.js frontend (~1,100+ commits, majority share since 10/2023). Stripe billing and subscriptions. Ephemeral Coder workspaces for team and agentic development. AI-generated QA and deployment plans from release diffs.',
-    stack: ['Next.js', 'TypeScript', 'Stripe', 'GraphQL', 'Elixir', 'GCP', 'Coder'],
+      'AI veterinary scribe for clinics. Vets record exam-room audio on web or mobile; the platform transcribes visits, generates SOAP notes, and produces care cards and client handouts. Covers appointments, patients, templates, PIMS integrations, practice settings, and subscriptions.',
+    stack: ['Next.js', 'GraphQL', 'Elixir', 'AI', 'Stripe', 'Tauri'],
     image: '/scribblevet.png',
     imageAlt: 'ScribbleVet',
     date: '10/2023 – Present',
-    link: 'https://instinct.vet/news/instinct-science-scribblevet-acquisition-2026/',
+    link: 'https://www.scribblevet.com/',
     github: '',
   },
   {
